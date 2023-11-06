@@ -1,0 +1,1426 @@
+
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 10px;
+    font-family: 'SF Pro Display', sans-serif;
+
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    height: 4.4rem;
+    width: 100%;
+    background-color: rgba(0, 0 , 0, .8);
+    backdrop-filter: blur(2rem);
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+
+}
+
+.nav-list-mobile{
+    display: none;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+    color: white;
+    padding: 0 1rem;
+    transition: opacity 0.5s;
+
+}
+
+.nav-link:hover{
+    opacity: .7;
+
+}
+
+
+.nav-link-search{
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url(../Website/Photos/) center no-repeat;
+    color: white;
+    
+}
+
+.nav-link-bag{
+    width: 1.4rem;
+    height: 4.4rem;
+    background: url() center no-repeat;
+    color: white;
+    
+}
+
+.Riveras{
+    height: 69.2rem;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    margin-top: 4.4rem;
+    background-image: linear-gradient(#980000,black);
+   
+}
+
+
+
+.title{
+    color: white;;
+    text-align: center;
+    padding-top: 5.5rem;
+
+}
+
+section .title{
+    transition: 1s;
+}
+
+.Riveras .title {
+    transform: translateY(100%);
+}
+.Riveras.show-title .title {
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.title-heading{
+    font-family: 'Satisfy', cursive;
+    font-size: 11rem;
+    line-height: 1.07143;
+    letter-spacing: -.005rem;
+    color: rgb(58, 120, 235);
+    
+  
+}
+.title-sub-heading{
+    font-size: 2.65rem;
+    margin-top: .6rem;
+    letter-spacing: .008rem;
+    font-weight: 400;
+    color: white;
+}
+
+.title-price{
+    font-size: 1.7rem;
+    color:  white;
+    margin-top: .68rem;
+}
+
+.about-rivera {
+    position: relative;
+    right: 200px;
+    top:30px;
+    color:rgb(214, 147, 71);
+    
+
+}
+
+.about-rivera h1 span {
+    font-size: 74px;
+    transform: translateY(12px);
+    position: relative;
+    display: inline-block
+}
+
+.about-rivera h1 {
+    font-size: 42px;
+    line-height: 64px
+}
+
+.about-rivera p2{
+    font-size: 20px;
+    color: #f2f2f2;
+}
+
+
+.my-car{
+    position: absolute;
+    padding-bottom: 100px;
+    bottom: 60px;
+    right: -70px;
+   
+}
+
+.my-car{
+    position: relative;
+    padding-bottom: 100px;
+    bottom: 190px;
+    left: 410px;
+    height:100px;
+   
+   
+}
+
+.cta{
+    position:   absolute;
+    margin-top: 1.8rem;
+    right: 910px;
+    top: 210px;
+
+}
+
+.cta-link{
+    color:#66bbff;
+    font-size: 2.1rem;
+    display: inline-block;
+}
+
+.cta-linkL:nth-child(2){
+    margin-left: 2.6rem;
+}
+
+.cta-link:hover{
+    border-bottom: 2px solid #66bbff;
+}
+
+/*2nd section*/
+
+.Gallery{
+    background-color: black;
+    display: flex;
+}
+
+.Gallery .title {
+    transform: translateY(80%);
+}
+.Gallery.show-title .title {
+    transform: translateY(0);
+}
+
+.img-gallery{
+    width: 100%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img{
+    width: 70%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.img-gallery img:hover{
+    transform: scale(2.5);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77 ,136, .2);
+}
+
+
+.title{
+    color: red;
+}
+.hero{
+    height: 69.2rem;
+    background-size: auto 73.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .6rem soild black;
+    border-bottom: 250px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Services Section*/
+
+.Services{
+    background-color: #000;
+}
+
+.Services .title {
+    transform: translateY(100%);
+}
+.Services.show-title .title {
+    transform: translateY(0);
+}
+
+
+
+.services-types{
+    font-size: 40px;
+    font-weight: 100;
+    font-style:oblique;
+    color: white;
+    display:inline-block;
+    padding: 10px;
+    line-height: 80px;
+    position: relative;
+    left: -300px;
+    top: 100px;
+}
+
+.service-pics{
+    font-size: 30px;
+    position: absolute;
+    font-style: italic;
+    top: 10px;
+    right: -900px;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 950px;
+    top: 2200px;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+
+}
+
+.slide img{
+    width: 800px;
+    height: 500px
+}
+
+.navigation-manual{
+position: absolute;
+width: 800px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: purple;
+}
+
+#radio1:checked ~.first{
+    margin-left:0 ;
+}
+#radio2:checked ~.first{
+    margin-left:-20%;
+}
+#radio3:checked ~.first{
+    margin-left:-40% ;
+}
+#radio4:checked ~.first{
+    margin-left:-60% ;
+}
+
+
+/* automatic nav*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+
+}
+
+.navigation-auto div{
+    border: 2px solid purple;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-top: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #97359c;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #97359c;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #97359c;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+   background: #97359c;
+}
+
+/*About Section */
+
+.about{
+    background-color: #000; 
+}
+
+.about .title {
+    transform: translateY(100%);
+}
+.about.show-title .title {
+    transform: translateY(0);
+}
+
+
+.about-box h1{
+    font-size: 60px;
+    color:#0070c9;
+    position: relative;
+    left: -400px;
+    top: 40px;
+}
+
+.about-box p{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    left: 300px;
+    top: 150px;
+}
+
+/*Contact Section*/
+
+.contact{
+    background-color: #000;
+}
+.contact .title {
+    transform: translateY(100%);
+}
+.contact.show-title .title {
+    transform: translateY(0);
+}
+
+#salomon{
+    position: absolute;
+    left: 180px;
+    top: 3250px;
+    border-radius: 875px;
+}
+
+
+.contact-form{
+    position: relative;
+    left:-500px;
+    top: -100px;
+    z-index: 0;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+}
+.container{
+    margin-top: 0 auto;
+}
+.contact-form h1{
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #69275c;
+    text-align: center;
+}
+
+.contact-form .main{
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+}
+.content{
+    flex-basis: 50%;
+    padding: 3em 3em;
+    background: #000;
+    box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.form-img{
+    flex-basis: 50%;
+
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid;
+}
+.form-img img{
+    position: absolute;
+    right: -450px;
+    top: 100px;
+}
+.btn,
+button,
+input{
+    border-radius: 35px;
+}
+.btn:hover,
+button:hover{
+    color: #97359c;
+    transition: 0.5s ease;
+}
+.contact-form form{
+    margin: 30px 0;
+}
+.contact-form input,
+textarea{
+    outline: none;
+    margin-bottom: 30px;
+    font-stretch: 16px;
+    color: #999;
+    padding: 20px 15px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: #fcfcfc;
+    transition: 0.3s ease;
+    border-radius: 35px;
+}
+.contact-form input:focus{
+    background: transparent;
+    border: 1px solid #69275c;
+}
+.contact-form button{
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    background: #69275c;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 14px 15px;
+    border: 1px solid #69275c;
+
+}
+
+.map{
+    position: absolute;
+    left: 1800px;
+    top: 200px;
+}
+.mapSmall{
+    display: none;
+}
+
+.hours{
+    position: relative;
+    left: 600px;
+    top: -400px;
+    color: #f2f2f2;
+}
+
+.hours h1{
+    color: #980000;
+}
+.times{
+    color: #f2f2f2;
+}
+
+
+
+@media screen and (max-width: 1068px) {
+    .Riveras{
+        background-image: linear-gradient(#980000,black);
+    }
+    .Gallery{
+        background-image:url();
+    }
+
+    .hero{
+        height: 65rem;
+        background-size: auto 69.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title-heading{
+        font-size: 9.4rem;
+    }
+    .title-sub-heading{
+        font-size: 2.4rem;
+
+    }
+
+    .cta-linkL:nth-child(2){
+        margin-left: 2rem;
+    }
+
+    .mobile-menu{
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #f2f2f2;
+
+    }
+
+    .line{
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: white;
+        transition: margin-top .3192 cubic-bezier(0.04,0.04,0.12,0.96);
+    }
+
+    .line-top{
+        margin-top: 3px;
+    }
+
+    .line-bottom{
+        margin-top: -.4rem;
+    }
+
+    .active .line-top{
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform .3192 .1s  cubic-bezier(0.04,0.04,0.12,0.96);
+        color: #f2f2f2;
+    }
+
+    .active .bottom-top{
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform .3192 .1s  cubic-bezier(0.04,0.04,0.12,0.96);
+    }
+
+    header.active{
+        height: 100%;
+        background-color: white;
+    }
+
+    .nav-link-apple{
+        width: 1.8rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .nav-link-bag{
+        width: 1.6rem;
+        height:4.8rem;
+        transition: opacity 3s;
+
+    }
+
+    .nav{
+        position: relative;
+        
+    }
+
+    .nav-link{
+        font-size: 1.7rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .nav-list-larger{
+
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: opacity .3s;
+        visibility: hidden;
+
+    }
+
+    .active .nav-list-larger{
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .nav-link-bag{
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .nav-list-larger .nav-item{
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255, 255 , 255, .1);
+    }
+
+    .nav-list-larger .nav-item:nth-child(3){
+        border-bottom: none;
+    }
+
+    .active .nav-list-larger .nav-item{
+        animation: FadeIn 1s ease-in;
+    }
+
+    @keyframes FadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    .title{
+        padding: 3.7rem;
+
+    }
+
+    .title-heading{
+        font-size: 10.6rem;
+    }
+    .title-sub-heading{
+        font-size: 3.5rem;
+    }
+    .title-heading-watch{
+        margin-top: -.5rem;
+        margin-bottom: 0;
+    }
+    .title-price{
+        font-size: 2.4rem;
+
+
+    }
+    .my-car{
+        
+        position:relative;
+        left: -25px;
+        image-resolution: 100px;
+        display: none;
+    }
+
+    .cta{
+margin-top: .7rem;
+    }
+
+    .cta-link{
+        font-size:1.9rem;
+    }
+
+    .about-rivera{
+        position: relative;
+        right: -00px;
+    }
+
+    
+    .about-rivera p2{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .Gallery{
+      background-color: black;
+      height: 800px;
+     }
+
+
+
+     .Services{
+        background-color: black;
+        height: 800px;
+     }
+
+     
+
+     .services-types{
+        font-size: 60px;
+    font-weight: 100;
+   
+    color: white;
+    display:inline-block;
+    line-height: 95px;
+    position: relative;
+    top: 140px;
+    left: 20px;
+     }
+
+     .service-pics{
+        font-size: 24px;
+    position: absolute;
+    font-style: italic;
+    top: 500px;
+    right: -196px;
+    display: none;
+     }
+
+     .slider{
+        width: 380px;
+        height: 270px;
+        border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 257px;
+    top: 2570px;
+    display: none;
+     }
+
+
+
+     .about{
+        background-color: black;
+        height: 900px;
+     }
+     .about-box p{
+        font-size: 20px;
+    color: white;
+    position: relative;
+    left: 00px;
+    padding: 90px;
+    top: 220px;
+     }
+
+     .about-box h1{
+        display: none;
+     }
+
+
+
+
+     .contact{
+       background-color: black;
+       height: 1200px;
+
+     }
+
+     .contact-form{
+        position: relative;
+    left:0px;
+    top: -100px;
+    z-index: 0;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+     }
+
+     .contact-form h1{
+        line-height: 40px;
+        margin-bottom: 5px;
+        left: 10px;
+        top: 300px;
+        position: relative;
+        font-size: 30px;
+        font-weight: 500;
+        color: #69275c;
+        text-align: center;
+     }
+     .map{
+        display: none;
+     }
+
+     .mapSmall{
+        position: absolute;
+        display: block;
+        left: 400px;
+         top: 750px;
+         height: 10px;
+     }
+     .hours{
+        color: #f2f2f2;
+     }
+
+
+
+    
+
+    
+}
+
+@media screen and (max-width:767px){
+
+    .Riveras{
+        background-image: linear-gradient(#980000,black);
+    }
+    
+
+    .hero{
+        height: 40rem;
+        background-size: auto 54.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        padding: 3.7rem;
+
+    }
+
+    .title-heading{
+        font-size: 3.6rem;
+    }
+    .title-sub-heading{
+        font-size: 2.5rem;
+    }
+    .title-heading-watch{
+        margin-top: -.5rem;
+        margin-bottom: 0;
+    }
+    .title-price{
+        font-size: 1.4rem;
+
+
+    }
+    .my-car{
+        display: none;
+    }
+
+    .cta{
+margin-top: .7rem;
+    }
+
+    .cta-link{
+        font-size:1.9rem;
+    }
+
+    .about-rivera{
+        position: relative;
+        right: -00px;
+    }
+
+    .about-rivera h1 span{
+        display: none;
+    }
+
+    .about-rivera h1{
+        display: none;
+    }
+    .about-rivera p2{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .Gallery{
+      background-color: #66bbff;
+      height: 800px;
+     }
+
+
+
+
+
+     .Services{
+        background-color: #0070c9;
+        height: 800px;
+     }
+
+     label[for=file]{
+        font-size: 22px;
+    height: 100px;
+    width: 150px;
+    border-radius: 6px;
+    border: 1px dashed #999;
+    position: relative;
+    right: -230px;
+     }
+
+     #EstBut{
+        top: 450px; /* Example: Move the button 20 pixels down */
+    left: 230px;
+     }
+
+     .services-types{
+        font-size: 20px;
+    font-weight: 100;
+    font-style:oblique;
+    color: white;
+    display:inline-block;
+    padding: 110px;
+    line-height: 25px;
+    position: relative;
+    top: -120px;
+    left: -90px;
+     }
+
+     .service-pics{
+        font-size: 24px;
+    position: absolute;
+    font-style: italic;
+    top: 500px;
+    right: -76px;
+     }
+
+     .slider{
+        width: 380px;
+        height: 270px;
+        border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 17px;
+    top: 2030px;
+     }
+
+
+
+     .about{
+        background-color: #97359c;
+        height: 900px;
+     }
+     .about-box p{
+        font-size: 15px;
+    color: white;
+    position: relative;
+    left: 00px;
+    top: 220px;
+     }
+
+     .about-box h1{
+        display: none;
+     }
+
+
+
+
+     .contact{
+       background-color: #980000;
+       height: 1200px;
+
+     }
+
+     .contact-form{
+        position: relative;
+    left:0px;
+    top: -100px;
+    z-index: 0;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+     }
+
+     .contact-form h1{
+        line-height: 40px;
+        margin-bottom: 5px;
+        left: 10px;
+        top: 300px;
+        position: relative;
+        font-size: 30px;
+        font-weight: 500;
+        color: #69275c;
+        text-align: center;
+     }
+     .map{
+        display: none;
+     }
+
+     .mapSmall{
+        position: absolute;
+        left: 80px;
+         top: 750px;
+         height: 10px;
+     }
+
+
+
+
+}
+
+@media screen and (max-width:767px){
+
+    header{
+        height: 4.8rem;
+        transition: background .36s cubic-bezier(0.32, 0.8, 0.24, 1),
+                        height .56s cubic-bezier(0.32, 0.8, 0.24, 1);
+    }
+
+    header .container{
+        padding: 0;
+
+    }
+
+    .Riveras{
+        margin-top: 4.8rem;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav-list{
+        margin-top: 0;
+    }
+    .nav-list-mobile{
+        display: flex;
+    }
+
+    .nav-item{
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .mobile-menu{
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+
+    .line {
+        position: absolute;
+        width: 1.7rem;
+        height: 1px;
+        background-color: white;
+        transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+    
+    .line-top {
+        margin-top: 3px;
+    }
+    
+    .line-bottom {
+        margin-top: -0.4rem;
+    }
+    
+    .active .line-top {
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform 1.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+    
+    .active .line-bottom {
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform 1.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    header.active{
+        height: 100%;
+        background-color: black;
+    }
+
+    .nav-link-apple{
+        width: 1.8rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .nav-link-bag{
+        width: 1.6rem;
+        height:4.8rem;
+        transition: opacity 3s;
+
+    }
+
+    .nav{
+        position: relative;
+        
+    }
+
+    .nav-link{
+        font-size: 1.7rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .nav-list-larger{
+
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        transition: opacity .3s;
+        visibility: hidden;
+
+    }
+
+    .active .nav-list-larger{
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .nav-link-bag{
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .nav-list-larger .nav-item{
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255, 255 , 255, .1);
+    }
+
+    .nav-list-larger .nav-item:nth-child(3){
+        border-bottom: none;
+    }
+
+    .active .nav-list-larger .nav-item{
+        animation: FadeIn 1s ease-in;
+    }
+
+    @keyframes FadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width:767px){
+
+    .Riveras{
+        background-image: linear-gradient(#980000,black);
+    }
+    
+
+    .hero{
+        height: 40rem;
+        background-size: auto 54.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        padding: 3.7rem;
+
+    }
+
+    .title-heading{
+        font-size: 3.6rem;
+    }
+    .title-sub-heading{
+        font-size: 2.5rem;
+    }
+    .title-heading-watch{
+        margin-top: -.5rem;
+        margin-bottom: 0;
+    }
+    .title-price{
+        font-size: 1.4rem;
+
+
+    }
+    .my-car{
+        display: none;
+    }
+
+    .cta{
+margin-top: .7rem;
+    }
+
+    .cta-link{
+        font-size:1.9rem;
+    }
+
+    .about-rivera{
+        position: relative;
+        right: -00px;
+    }
+
+    .about-rivera h1 span{
+        display: none;
+    }
+
+    .about-rivera h1{
+        display: none;
+    }
+    .about-rivera p2{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .Gallery{
+      background-color: black;
+      height: 800px;
+     }
+
+     .img-gallery img{
+        width: 80%;
+     }
+     .img-gallery{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+     }
+
+     .Services{
+        background-color: black;
+        height: 800px;
+     }
+
+    
+
+     .services-types{
+        font-size: 25px;
+    color: white;
+    display:-moz-inline-grid;
+    line-height: 45px;
+    left: 0;
+    
+    
+    
+     }
+
+     .service-pics{
+        font-size: 24px;
+    position: absolute;
+    font-style: italic;
+    top: 500px;
+    right: -76px;
+     }
+
+     .slider{
+        width: 380px;
+        height: 270px;
+        border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    left: 17px;
+    top: 2030px;
+     }
+
+
+
+     .about{
+        background-color: black;
+        height: 900px;
+     }
+     .about-box p{
+        font-size: 15px;
+    color: white;
+    padding: 10px;
+    
+     }
+
+
+
+
+     .contact{
+       background-color: black;
+       height: 1200px;
+
+     }
+
+     .contact-form{
+        position: relative;
+    left:0px;
+    top: -100px;
+    z-index: 0;
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+     }
+
+     .contact-form h1{
+        line-height: 40px;
+        margin-bottom: 5px;
+        left: 10px;
+        top: 300px;
+        position: relative;
+        font-size: 30px;
+        font-weight: 500;
+        color: #69275c;
+        text-align: center;
+     }
+     .map{
+        display: none;
+     }
+
+     .mapSmall{
+        position: absolute;
+        left: 80px;
+         top: 750px;
+         height: 10px;
+     }
+
+
+
+
+
+}
+
+
+
+
+
+
